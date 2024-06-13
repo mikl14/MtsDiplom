@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RestControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RestControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.example.controller.html">org.example.controller</a> &gt; RestControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.498s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getContributionTest()</td>
+<td class="success">0.498s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-06-12 17:16:21.106  INFO 11848 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.example.controller.RestControllerTest], using SpringBootContextLoader
+2024-06-12 17:16:21.107  INFO 11848 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.example.controller.RestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-06-12 17:16:21.107  INFO 11848 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.controller.RestControllerTest]: RestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-12 17:16:21.136  INFO 11848 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.Deposit for test class org.example.controller.RestControllerTest
+2024-06-12 17:16:21.139  INFO 11848 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-06-12 17:16:21.141  INFO 11848 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f83467, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@182469d0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@62aefc75, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c6653e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@435e224d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@788fa91f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6dd7af2f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e8bc83e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6c75c5e8, org.springframework.test.context.event.EventPublishingTestExecutionListener@69374e28, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@39c93af6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3903cfc9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b1b1784, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@288e50c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58e0d1ac, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7fba30fe, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cbebfba]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2024-06-12 17:16:21.187  INFO 11848 --- [    Test worker] o.example.controller.RestControllerTest  : Starting RestControllerTest using Java 11.0.19 on DESKTOP-D1UNUKP with PID 11848 (started by proro in C:\Users\proro\Documents\deposit)
+2024-06-12 17:16:21.188  INFO 11848 --- [    Test worker] o.example.controller.RestControllerTest  : The following 1 profile is active: &quot;test&quot;
+2024-06-12 17:16:23.154  INFO 11848 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12 17:16:23.167  INFO 11848 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2024-06-12 17:16:23.415  INFO 11848 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2024-06-12 17:16:23.416  INFO 11848 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2024-06-12 17:16:23.417  INFO 11848 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+2024-06-12 17:16:23.553  INFO 11848 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/mtsdeposits (PostgreSQL 16.1)
+2024-06-12 17:16:23.554  WARN 11848 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2024-06-12 17:16:23.568  INFO 11848 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.009s)
+2024-06-12 17:16:23.571  INFO 11848 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;mtsbank&quot;: 1.1.2
+2024-06-12 17:16:23.572  INFO 11848 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;mtsbank&quot; is up to date. No migration necessary.
+2024-06-12 17:16:23.621  INFO 11848 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12 17:16:23.637  INFO 11848 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-12 17:16:23.720  INFO 11848 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-12 17:16:23.721  INFO 11848 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-06-12 17:16:23.744  WARN 11848 --- [    Test worker] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): org.example.entity.ContributionContributionType
+2024-06-12 17:16:23.744  WARN 11848 --- [    Test worker] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): org.example.entity.ContributionContributionType
+2024-06-12 17:16:23.810  INFO 11848 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-12 17:16:23.810  INFO 11848 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12 17:16:23.922  WARN 11848 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-12 17:16:24.187  INFO 11848 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bdef8ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@345d4ecb, org.springframework.security.web.context.SecurityContextPersistenceFilter@765d67dd, org.springframework.security.web.header.HeaderWriterFilter@5f3bc119, org.springframework.security.web.authentication.logout.LogoutFilter@4ea4290f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e68bd3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fda92e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66e44f9f, org.springframework.security.web.session.SessionManagementFilter@1b9cfc19, org.springframework.security.web.access.ExceptionTranslationFilter@75a5a912, org.springframework.security.web.access.intercept.AuthorizationFilter@5e783f78]
+2024-06-12 17:16:25.160  INFO 11848 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-12 17:16:25.160  INFO 11848 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-12 17:16:25.161  INFO 11848 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-12 17:16:25.170  INFO 11848 --- [    Test worker] o.example.controller.RestControllerTest  : Started RestControllerTest in 4.026 seconds (JVM running for 13.866)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 12 июн. 2024 г., 17:16:25</p>
+</div>
+</div>
+</body>
+</html>
