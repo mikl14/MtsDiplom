@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+th {
+    background-color: #f0f0f0;
+}
+
+.button {
+    background-color: #FF0000;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+}

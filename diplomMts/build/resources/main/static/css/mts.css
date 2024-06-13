@@ -1,0 +1,35 @@
+
+    .button {
+        background-color: #FF0000;
+        border: none;
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 20px 40px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .container {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button-container {
+        text-align: center; /* Центрирование кнопок */
+    }
+
+    .button {
+        margin: 5px; /* Отступы между кнопками */
+    }
+
+    .input-field
+    {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    }

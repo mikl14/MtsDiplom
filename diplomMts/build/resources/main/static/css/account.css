@@ -1,0 +1,79 @@
+input[type="submit"][name="action"][value="plus"] {
+    background-color: #FF0000; /* Красный цвет */
+    color: #FFFFFF;
+    border-radius: 10px; /* Скругление краёв */
+    font-size: 1.5em; /* Увеличение размера текста */
+    padding: 10px 20px; /* Увеличение размера кнопки */
+    border: none; /* Убрать рамку */
+    cursor: pointer; /* Изменить курсор на указатель */
+}
+
+input[type="submit"][name="action"][value="minus"] {
+    background-color: #FF0000; /* Красный цвет */
+    color: #FFFFFF;
+    border-radius: 10px; /* Скругление краёв */
+    font-size: 1.5em; /* Увеличение размера текста */
+    padding: 10px 20px; /* Увеличение размера кнопки */
+    border: none; /* Убрать рамку */
+    cursor: pointer; /* Изменить курсор на указатель */
+}
+
+input[type="submit"][name="action"][value="cancel"] {
+    background-color: #FF0000; /* Красный цвет */
+    color: #FFFFFF;
+    border-radius: 10px; /* Скругление краёв */
+    font-size: 1.5em; /* Увеличение размера текста */
+    padding: 10px 20px; /* Увеличение размера кнопки */
+    border: none; /* Убрать рамку */
+    cursor: pointer; /* Изменить курсор на указатель */
+}
+
+#operations-table {
+    border-collapse: collapse; /* Убрать разделение ячеек */
+    border-spacing: 0; /* Убрать отступы между ячейками */
+}
+
+#operations-table th, #operations-table td {
+    border: 1px solid #FF0000; /* Красная рамка */
+    border-radius: 5px; /* Скругление рамки */
+    padding: 10px; /* Отступы в ячейках */
+    text-align: center; /* Центрировать текст */
+}
+
+#operations-table th {
+    background-color: #FFC0CB; /* Фоновая рамка для заголовков */
+    color: #000000; /* Черный текст для заголовков */
+}
+
+#operations-table td {
+    background-color: #FFFFFF; /* Белый фон для ячеек */
+}
+
+.centered {
+    position: absolute; /* Абсолютная позиция */
+    top: 50%; /* Вверхняя граница */
+    left: 50%; /* Левая граница */
+    transform: translate(-50%, -50%); /* Перемещение на центр */
+    text-align: left; /* Левая ориентация текста */
+    display: flex; /* Flexbox для вертикального расположения */
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-start; /* Начало вертикального расположения */
+}
+
+input[type="text"] {
+    font-size: 1.5em; /* Увеличение размера текста */
+    padding: 10px; /* Отступы в поле */
+    border: 1px solid #C0C0C0; /* Серая рамка */
+    border-radius: 10px; /* Скругление рамки */
+    background-color: #F5F5F5; /* Белый фон */
+    color: #000000; /* Черный текст */
+    readonly: true; /* Нередактируемое поле */
+}
+
+.button-container {
+    text-align: center; /* Центрирование кнопок */
+}
+
+button[type="submit"] {
+    margin: 5px; /* Отступы между кнопками */
+}

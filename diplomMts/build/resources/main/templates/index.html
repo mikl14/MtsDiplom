@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Красные скругленные кнопки</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/mts.css}">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${Name}">Hello</h1>
+    <div class="button-container">
+        <form th:action="@{/account}" method="post">
+            <button class="button" >Счет</button>
+        </form>
+        <form th:action="@{/contribution}" method="post">
+            <button class="button">Вклад</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

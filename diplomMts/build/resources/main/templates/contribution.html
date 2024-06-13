@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Открытые вклады и отклоненные заявки</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/contribution.css}">
+</head>
+<body>
+<h1>Открытые вклады и отклоненные заявки</h1>
+<h2>Открытые вклады</h2>
+<h3>Ваш баланс</h3>
+<label th:value="${accountSum} + Руб." th:text="${accountSum} + Руб."></label>
+<table>
+    <thead>
+    <tr>
+        <th>Код продукта</th>
+        <th>Сумма</th>
+        <th>Конечная дата</th>
+        <th>Процентная ставка (%)</th>
+    </tr>
+    <!-- вставьте данные открытым вкладам -->
+    <tr th:each="contribution : ${depositList}">
+        <td th:text="${contribution.productCode}">Тип</td>
+        <td th:text="${contribution.sum}">Дата</td>
+        <td th:text="${contribution.closedDate}">Сумма</td>
+        <td th:text="${contribution.persent}">Ставка</td>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Здесь будет отображаться история операций -->
+    </tbody>
+</table>
+<h2>Отклоненные заявки</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Код продукта</th>
+        <th>Сумма</th>
+        <th>Причина отклонения</th>
+        <th>Процентная ставка (%)</th>
+    </tr>
+    <!-- вставьте данные открытым вкладам -->
+    <tr th:each="closedContribution : ${closedDepositList}">
+        <td th:text="${closedContribution.productCode}">Тип</td>
+        <td th:text="${closedContribution.sum}">Дата</td>
+        <td th:text="${closedContribution.returnCode}">Причина отклонения</td>
+        <td th:text="${closedContribution.persent}">Ставка</td>
+    </tr>
+    </thead>
+</table>
+
+
+<form th:action="@{/create_contribution}" method="post">
+<button class="button">Новый вклад</button>
+</form>
+
+</body>
+</html>

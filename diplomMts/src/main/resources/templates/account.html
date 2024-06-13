@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Персональный счет</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/account.css}">
+</head>
+<body>
+<h1>Персональный счет</h1>
+
+    <form method="post" th:action="@{/sum/}" th:object="${userInfo}">
+
+    <div class="centered">
+
+        <input type="text" th:value="${accountSum}" />
+        <input id="number" placeholder="sum" required type="text" th:field="*{sum}" class="form-control">
+        <div class="button-container">
+        <input type="submit" name="action" value="plus" >
+        <input type="submit" name="action" value="minus" >
+        <input type="submit" name="action" value="cancel" >
+        </div>
+        <h1 th:text="${error}">Hello</h1>
+    </div>
+    </form>
+
+
+<!-- Таблица операций -->
+<table id="operations-table">
+    <thead>
+    <tr>
+        <th>Тип</th>
+        <th>Дата</th>
+        <th>Сумма</th>
+    </tr>
+    <tr th:each="bankOperation : ${bankOperationList}">
+        <td th:text="${bankOperation.type}">Тип</td>
+        <td th:text="${bankOperation.date}">Дата</td>
+        <td th:text="${bankOperation.sum}">Сумма</td>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Здесь будет отображаться история операций -->
+    </tbody>
+</table>
+
+</body>
+</html>
